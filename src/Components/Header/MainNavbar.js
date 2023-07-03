@@ -10,8 +10,7 @@ const MainNavbar = (props) => {
   const ctx=useContext(CartContext)
 
   return (
-    <div>
-    <Navbar expand="lg"  className={classes.navbar}>
+    <div className={classes.navbar}>
       <div className={classes['logo-name']}>
         <Navbar.Brand style={{fontSize: '1.6rem',fontWeight:'bold'}} href="#home">MovieShow</Navbar.Brand>
       </div>
@@ -31,7 +30,6 @@ const MainNavbar = (props) => {
           <GiHamburgerMenu/>
         </button>
       </div>
-    </Navbar>
     </div>
   );
 };

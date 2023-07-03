@@ -1,13 +1,18 @@
 .navbar{
+    top: 0;
+    width: 100%;
+    position: fixed;
     display: grid;
     grid-template-columns: 25% 50% 25%;
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    background-color: rgba(240, 64, 64, 0.8);
+    padding: 0.5rem;
+    border-bottom: 0.3rem solid rgb(240, 92, 92);
+    background-color: black;
 }
 .logo-name{
-    grid-column: 1/2;display: grid; justify-content: center;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    grid-column: 1/2;display: grid; justify-content: center;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: white;
 }
 .cartCircle {
     width: 24px;height: 24px;
@@ -15,7 +20,6 @@
     display: flex;align-items: center;justify-content: center;
     color: white;font-weight: bold;
   }
-.mobile-menu-list{display:none}
 .menu-list{
     grid-column: 2/3;
     display: grid;
@@ -26,8 +30,8 @@
     text-decoration: none;color: white;width:100%;text-align: center;
 }
 .list a:hover{
-    font-size: 1.1rem;
-    background-color:white;color:black;padding: 3px 10%;width: 150%;
+    font-size: 1rem;
+    background-color:white;color:black;width: 150%;
 }
 .button{
     grid-column-start: 3;
